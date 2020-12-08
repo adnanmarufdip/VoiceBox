@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E48BA39E-8138-4ABC-9DB0-959A04690699}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WinMailClientApp</RootNamespace>
+    <AssemblyName>WinMailClientApp</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>Resource\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NAudio">
+      <HintPath>Resource-DLL\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComposeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ComposeControl.Designer.cs">
+      <DependentUpon>ComposeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomeMailLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomeMailLabel.Designer.cs">
+      <DependentUpon>CustomeMailLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DraftControls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DraftControls.Designer.cs">
+      <DependentUpon>DraftControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrftMsgLbl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrftMsgLbl.Designer.cs">
+      <DependentUpon>DrftMsgLbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InfoControl.Designer.cs">
+      <DependentUpon>InfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InboxControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InboxControl.Designer.cs">
+      <DependentUpon>InboxControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadBoxControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReadBoxControl.Designer.cs">
+      <DependentUpon>ReadBoxControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReadBoxControl_.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReadBoxControl_.Designer.cs">
+      <DependentUpon>ReadBoxControl_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SentControlcs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SentControlcs.Designer.cs">
+      <DependentUpon>SentControlcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsControl.Designer.cs">
+      <DependentUpon>SettingsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SntMsgLbl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SntMsgLbl.Designer.cs">
+      <DependentUpon>SntMsgLbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VBScratchpad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VBScratchpad.Designer.cs">
+      <DependentUpon>VBScratchpad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VoiceBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VoiceBox.Designer.cs">
+      <DependentUpon>VoiceBox.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ComposeControl.resx">
+      <DependentUpon>ComposeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomeMailLabel.resx">
+      <DependentUpon>CustomeMailLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DraftControls.resx">
+      <DependentUpon>DraftControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrftMsgLbl.resx">
+      <DependentUpon>DrftMsgLbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoControl.resx">
+      <DependentUpon>InfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InboxControl.resx">
+      <DependentUpon>InboxControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReadBoxControl.resx">
+      <DependentUpon>ReadBoxControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadBoxControl_.resx">
+      <DependentUpon>ReadBoxControl_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SentControlcs.resx">
+      <DependentUpon>SentControlcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsControl.resx">
+      <DependentUpon>SettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SntMsgLbl.resx">
+      <DependentUpon>SntMsgLbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VBScratchpad.resx">
+      <DependentUpon>VBScratchpad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoiceBox.resx">
+      <DependentUpon>VoiceBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animationloading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animationloading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MIC7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MIC0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MIC1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MIC2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MIC3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MIC4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MIC5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MIC6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ico.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

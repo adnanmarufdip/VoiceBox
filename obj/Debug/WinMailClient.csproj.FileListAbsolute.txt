@@ -1,0 +1,16 @@
+C:\Users\adnan\Desktop\WinMailClientApp\bin\Debug\WinMailClientApp.exe.config
+C:\Users\adnan\Desktop\WinMailClientApp\bin\Debug\WinMailClientApp.exe
+C:\Users\adnan\Desktop\WinMailClientApp\bin\Debug\WinMailClientApp.pdb
+C:\Users\adnan\Desktop\WinMailClientApp\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\adnan\Desktop\WinMailClientApp\obj\Debug\WinMailClient.csprojAssemblyReference.cache
+C:\Users\adnan\Desktop\WinMailClientApp\obj\Debug\WinMailClientApp.ComposeControl.resources
+C:\Users\adnan\Desktop\WinMailClientApp\obj\Debug\WinMailClientApp.CustomeMailLabel.resources
+C:\Users\adnan\Desktop\WinMailClientApp\obj\Debug\WinMailClientApp.Form1.resources
+C:\Users\adnan\Desktop\WinMailClientApp\obj\Debug\WinMailClientApp.Form2.resources
+C:\Users\adnan\Desktop\WinMailClientApp\obj\Debug\WinMailClientApp.InboxControl.resources
+C:\Users\adnan\Desktop\WinMailClientApp\obj\Debug\WinMailClientApp.Properties.Resources.resources
+C:\Users\adnan\Desktop\WinMailClientApp\obj\Debug\WinMailClientApp.ReadBoxControl.resources
+C:\Users\adnan\Desktop\WinMailClientApp\obj\Debug\WinMailClient.csproj.GenerateResource.cache
+C:\Users\adnan\Desktop\WinMailClientApp\obj\Debug\WinMailClient.csproj.CopyComplete
+C:\Users\adnan\Desktop\WinMailClientApp\obj\Debug\WinMailClientApp.exe
+C:\Users\adnan\Desktop\WinMailClientApp\obj\Debug\WinMailClientApp.pdb
